@@ -1,0 +1,38 @@
+{
+  "name": "dsfe",
+  "version": "0.1.0",
+  "description": "Do some fucking exercise. 💪",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/dsfa",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node_modules/.bin/ts-node src",
+    "cli": "node_modules/.bin/ts-node src/cli --s=eddie-hall",
+    "build": "rm -rf dist node_modules; yarn && yarn test && tsc && chmod +x dist/cli/index.js",
+    "test": "jest"
+  },
+  "bin": {
+    "dsfa": "./dist/cli/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "@types/node-notifier": "^8.0.1",
+    "@types/number-to-words": "^1.2.1",
+    "@types/pluralize": "^0.0.29",
+    "babel-jest": "^27.4.4",
+    "jest": "^27.4.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "node-notifier": "^10.0.0",
+    "number-to-words": "^1.2.4",
+    "pluralize": "^8.0.0",
+    "yargs": "^17.3.0"
+  }
+}
