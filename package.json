@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "bin": {
-    "dsfa": "./dist/cli/index.js"
+    "dsfe": "./dist/cli/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
